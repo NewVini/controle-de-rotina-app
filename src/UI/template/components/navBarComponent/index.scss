@@ -1,0 +1,41 @@
+
+nav {
+    background: linear-gradient(87deg, #ffffff, #ffffff);
+    height: 53px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px -4px #ccc;
+    margin-bottom: 60px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+    .icons-wraper {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 0px 30px;
+        width: 100%;
+
+        div:hover { 
+            cursor: pointer;
+            background-color: #872cc4;
+            padding: 2px;
+            transition: ease-in 190ms;
+            border-radius: 6px;
+            path {
+                fill:#ffffff;
+                fill-opacity:1;
+              }
+        }
+    }
+
+     path {
+        fill:#872cc4;
+        fill-opacity:1;
+      }
+}
+ 

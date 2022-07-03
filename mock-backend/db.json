@@ -1,0 +1,8 @@
+{
+  "cards": [
+    { "id": 1, "cardName": "Nubank", "balance": "1.280,89", "cardIdentify":"nubank" },
+    { "id": 2, "cardName": "Digio", "balance": "4.280,89","cardIdentify":"digio" },
+    { "id": 3, "cardName": "Santander SX", "balance": "5.680,89","cardIdentify":"santander" },
+    { "id": 4, "cardName": "Caixa", "balance": "2.280,89","cardIdentify":"caixa" }
+  ]
+}

@@ -1,0 +1,99 @@
+.sidebar-content {
+    background: red;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    height: 100vh;
+    z-index: 9999;
+    box-shadow: 245px 0px 50px 100000px #00000026;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    background: linear-gradient(87deg, #ffffff, #ffffff);
+    border-right: solid 2px;
+    width: 160px;
+    transition: 80ms ease;
+    transition: 200ms ease-in;
+
+    .sidebar-wraper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .list-menu-icons {
+            margin-top: 10%;
+            ul {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                text-align: left;
+
+                li {
+                    padding-right: 39px;
+                    padding-top: 23px;
+                    margin-top: 5px;
+                    font-weight: 400;
+                    cursor: pointer;
+                    transition: ease-in-out 50ms;
+                    &:hover {
+                        border-bottom: solid 2px #9832cc;
+                        font-weight: 500;
+                        color: #9832cc;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        .logo {
+            path {
+                fill:#872cc4;
+              }
+        }
+
+        
+
+        .close {
+            width: 100%;
+            display: flex;
+            flex-direction: row-reverse;
+            padding-right: 17px;
+            margin-top: 30px;
+            path {
+                fill:#872cc4;
+            }
+            svg {
+                cursor: pointer;
+                transition: ease 300ms;
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: ease 300ms;
+                }
+            }
+        }
+
+        .closed {
+            left: -16%;
+        }
+    }
+}
+
+.sidebar-content-closed {
+    background: red;
+    position: fixed;
+    left: -17%;
+    top: 0%;
+    height: 100vh;
+    z-index: 9999;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    background: linear-gradient(87deg, #ffffff, #ffffff);
+    border-right: solid 2px;
+    width: 160px;  
+    transition: 80ms ease;
+    transition: 200ms ease-in;
+}

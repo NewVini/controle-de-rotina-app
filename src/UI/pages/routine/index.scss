@@ -1,0 +1,39 @@
+.row-h1 {
+    font-size: 1.4rem;
+    color: #41175ec7;
+}
+.border-title {
+    padding: 10px;
+    border-bottom: solid 1px #9932cc;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+Button.btn-register {
+    margin-left: 10px;
+    background: radial-gradient(  rgb(0, 233, 0), rgb(2, 173, 136));
+    height: 100%;
+}
+
+.card-assignment {
+    box-shadow: 1px 15px 21px 1px rgba(204, 204, 204, 0.384);
+    padding: 10px 15px;
+    border-radius: 7px;
+
+    h1 {
+        font-size: 1rem;
+        
+        font-weight: bold;
+    }
+
+    &.active {
+        background: linear-gradient(to right,darkblue,darkorchid);
+        h1{
+            color: #ffff;
+        }
+    }
+    &.default {
+        border: 2px solid darkorchid;
+        h1{
+            color: darkorchid;
+        }
+    }
+}
