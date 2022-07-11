@@ -4,12 +4,23 @@ import './index.scss'
 import TextField from '@mui/material/TextField';
 import Checkbox from '@mui/material/Checkbox';
 import { Button } from '@mui/material';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+import FormGroup from '@mui/material/FormGroup';
+import FormControl from '@mui/material/FormControl';
 
 
 
 export const RoutinePage = () => {
 
     const [taskTitle, setTaskTitle] = useState<string>('Caminhada')
+    const [age, setAge] = useState<string>('Caminhada')
+
+    const handleChange = (event: SelectChangeEvent) => {
+        setAge(event.target.value as string);
+    };
+
 
     return (
         <>
@@ -26,27 +37,103 @@ export const RoutinePage = () => {
                     </div>
                 </div>
                 <div className="row mt-3">
-                    <div className="col-md-12 ">
-                        <TextField
-                            name="Description"
-                            label="Cadastrar tarefa"
-                            placeholder="Description"
-                            autoComplete="off"
-                            variant="outlined"
-                            size='small'
-                            style={{ 'width': '50%' }}
-                        />
-                        <Button className='btn-register ' variant='contained' size='small'>+</Button>
+                    <div className="col-md-12 d-flex justify-content-between">
+                        <FormGroup row={true} sx={{
+                            display: 'flex',
+                            width: '100%',
+                            justifyContent: 'space-between'
+                        }}>
+                            <TextField
+                                name="Description"
+                                label="Cadastrar tarefa"
+                                placeholder="Description"
+                                autoComplete="off"
+                                variant="outlined"
+                                size='small'
+                                style={{ 'width': '50%'}}
+                            />
+                            <FormControl sx={{width: '40%'}}>
+                                <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                                <Select
+                                    sx={{height: '72%'}}
+                                    labelId="demo-simple-select-label"
+                                    id="demo-simple-select"
+                                    value={age}
+                                    label="Age"
+                                    onChange={handleChange}
+                                >
+                                    <MenuItem value={10}>Ten</MenuItem>
+                                    <MenuItem value={20}>Twenty</MenuItem>
+                                    <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                            <Button className='btn-register ' variant='contained' size='small'>+</Button>
+                        </FormGroup>
                     </div>
                 </div>
                 <div className="row mt-5">
-                    <div className="col-md-3">
-                        <div className="card-assignment default d-flex justify-content-between align-items-center">
-                            <div className="assignment-title">
-                                <Checkbox color="success" />
+                    <div className="col-md-12 d-flex justify-content-between">
+                        <div className='routine-colum'>
+                            <div className='routine-title'>
+                                <h1>Segunda</h1>
                             </div>
-                            <div className="assignment-action">
-                                <h1> {taskTitle} </h1>
+                            <hr></hr>
+                            <div className='routine-checks d-flex align-items-center text-center'>
+                                <Checkbox /> <p>Estudar</p>
+                            </div>
+                        </div>
+                        <div className='routine-colum'>
+                            <div className='routine-title'>
+                                <h1>Segunda</h1>
+                            </div>
+                            <hr></hr>
+                            <div className='routine-checks d-flex align-items-center text-center'>
+                                <Checkbox /> <p>Estudar</p>
+                            </div>
+                        </div>
+                        <div className='routine-colum'>
+                            <div className='routine-title'>
+                                <h1>Segunda</h1>
+                            </div>
+                            <hr></hr>
+                            <div className='routine-checks d-flex align-items-center text-center'>
+                                <Checkbox /> <p>Estudar</p>
+                            </div>
+                        </div>
+                        <div className='routine-colum'>
+                            <div className='routine-title'>
+                                <h1>Segunda</h1>
+                            </div>
+                            <hr></hr>
+                            <div className='routine-checks d-flex align-items-center text-center'>
+                                <Checkbox /> <p>Estudar</p>
+                            </div>
+                        </div>
+                        <div className='routine-colum'>
+                            <div className='routine-title'>
+                                <h1>Segunda</h1>
+                            </div>
+                            <hr></hr>
+                            <div className='routine-checks d-flex align-items-center text-center'>
+                                <Checkbox /> <p>Estudar</p>
+                            </div>
+                        </div>
+                        <div className='routine-colum'>
+                            <div className='routine-title'>
+                                <h1>Segunda</h1>
+                            </div>
+                            <hr></hr>
+                            <div className='routine-checks d-flex align-items-center text-center'>
+                                <Checkbox /> <p>Estudar</p>
+                            </div>
+                        </div>
+                        <div className='routine-colum'>
+                            <div className='routine-title'>
+                                <h1>Segunda</h1>
+                            </div>
+                            <hr></hr>
+                            <div className='routine-checks d-flex align-items-center text-center'>
+                                <Checkbox /> <p>Estudar</p>
                             </div>
                         </div>
                     </div>
