@@ -1,5 +1,5 @@
 import { DaysWeek } from "../UI/models/daysWeek"
-export const daysWeek: Array<DaysWeek> = [
+export const daysWeekMock: Array<DaysWeek> = [
     {
         id: 0,
         name: 'Segunda'
