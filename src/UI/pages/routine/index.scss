@@ -1,11 +1,48 @@
-p{
+p {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
 }
 
-.routine-colum {
-    h1 {
-        font-size: 1.1rem;
+form {
+    display: flex;
+    padding-top: 15px;
+
+    input,
+    select {
+        width: 100%;
+        margin: 5px;
+        border: none;
+        border-bottom: solid 1.9px #8e2ec7;
+        border-radius: 6px;
+        transition: ease-in 250ms;
+        color: rgb(150, 148, 148);
+        padding-left: 5px;
+        &:focus {
+            border: none;
+            border-bottom: solid 2.5px #8e2ec7;
+            outline: none;
+        }
+
+        &::placeholder{
+            color: rgb(150, 148, 148);
+        }
+    }
+
+    button {
+        margin: 5px;
+        border: none;
+        border-radius: 6px;
+        width: 50%;
+        height: 80%;
+        color: #fff;
+        background: #8a2ec6;
+        font-weight: 500;
+        transition: ease-in 200ms;
+        
+        &:hover {
+            background: #892ec6b7;
+            color:#ffff;;
+        }
     }
 }
 
@@ -13,38 +50,9 @@ p{
     font-size: 1.4rem;
     color: #41175ec7;
 }
+
 .border-title {
     padding: 10px;
     border-bottom: solid 1px #9932cc;
     border-image: linear-gradient(to right, darkblue, darkorchid) 1;
-}
-Button.btn-register {
-    margin-left: 10px;
-    background: radial-gradient(  rgb(0, 233, 0), rgb(2, 173, 136));
-    height: 100%;
-}
-
-.card-assignment {
-    box-shadow: 1px 15px 21px 1px rgba(204, 204, 204, 0.384);
-    padding: 10px 15px;
-    border-radius: 7px;
-
-    h1 {
-        font-size: 1rem;
-        
-        font-weight: bold;
-    }
-
-    &.active {
-        background: linear-gradient(to right,darkblue,darkorchid);
-        h1{
-            color: #ffff;
-        }
-    }
-    &.default {
-        border: 2px solid darkorchid;
-        h1{
-            color: darkorchid;
-        }
-    }
 }
