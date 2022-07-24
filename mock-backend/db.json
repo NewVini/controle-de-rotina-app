@@ -4,5 +4,35 @@
     { "id": 2, "cardName": "Digio", "balance": "4.280,89","cardIdentify":"digio" },
     { "id": 3, "cardName": "Santander SX", "balance": "5.680,89","cardIdentify":"santander" },
     { "id": 4, "cardName": "Caixa", "balance": "2.280,89","cardIdentify":"caixa" }
+  ],
+  "activity": [
+     {
+      "day": "Segunda",
+      "tasks":["Estudar","treinar"]
+     },
+     {
+      "day": "Terça",
+      "tasks":["Estudar","treinar"]
+     },
+     {
+      "day": "Quarta",
+      "tasks":["Estudar","treinar"]
+     },
+     {
+      "day": "Quinta",
+      "tasks":["Trabalhar","treinar"]
+     },
+     {
+      "day": "Sexta",
+      "tasks":["trabalhar","Estudar","treinar"]
+     },
+     {
+      "day": "Sabádo",
+      "tasks":["Estudar","comer","comer"]
+     },
+     {
+      "day": "Domingo",
+      "tasks":["dormir","comer"]
+     }
   ]
 }
