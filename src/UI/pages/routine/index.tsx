@@ -3,13 +3,15 @@ import { useEffect, useState } from 'react'
 import './index.scss'
 import { daysWeekMock } from '../../../utils/daysWeekMock'
 import api from '../../../services/api'
+import { TasksType } from '../../../types/tasks-type'
 
 export const RoutinePage = () => {
     const [arrayDaysWeek] = useState(daysWeekMock)
+    const [arrayTasks, setArrayTasks] = useState<TasksType[]>([])
 
     const getDaysAndTasks = () => {
-        api.get("activity").then(res => {
-            console.log(res)
+        api.get<TasksType,TasksType>("activity").then((res:TasksType) => {
+            return setArrayTasks( res.data )
         })
     }
 
@@ -53,11 +55,12 @@ export const RoutinePage = () => {
                                     <div className="day-title">
                                         <h1> {daysObj.name} </h1>
                                     </div>
-                                    {
-                                        <div className="day-tasks">
+                                    {arrayTasks.map((tasksObj:TasksType, i) => {
+                                        return <div className="day-tasks">
                                             <input type="checkbox" name="" id="" />
-                                            <label>Estudar</label>
+                                            <label> {tasksObj.day} </label>
                                         </div>
+                                    })
                                     }
                                 </div>
                             })}

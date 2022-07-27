@@ -1,4 +1,4 @@
-import { DaysWeek } from "../UI/models/daysWeek"
+import { DaysWeek } from "../types/days-week"
 export const daysWeekMock: Array<DaysWeek> = [
     {
         id: 0,

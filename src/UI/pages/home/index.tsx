@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import './index.scss'
 import Button from '@mui/material/Button';
 import axios from 'axios'
-import { CardDTO } from '../../models/cards-model';
+import { CardDTO } from '../../../types/cards-model';
 import Chart from "react-apexcharts";
 
 
